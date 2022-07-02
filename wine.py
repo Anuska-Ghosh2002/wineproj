@@ -76,7 +76,7 @@ trace1 = go.Scatter3d(
  marker=dict(
  size=5,
  color=y,
- # colorscale='Viridis'
+ 
  )
 )
 # Create an object for graph layout
@@ -88,6 +88,7 @@ fig.update_layout(scene = dict(
     width=700,
     margin=dict(r=20, b=10, l=10, t=10),
  )
+
 """### 3d plot of the PCA result by plotly"""
 # Plot on the dashboard on streamlit
 st.plotly_chart(fig, use_container_width=True)
